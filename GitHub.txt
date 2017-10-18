@@ -1,0 +1,46 @@
+# This document is about how to create and manage your repositories in GitHub
+
+Reference Link:
+https://www.youtube.com/watch?v=RaKX4A5EiQo
+
+1. Create new repository with discription if possible, and be mindfull fo sensetive information.
+2. If you want to create  a website template go to Settings and choose a theme for your page (It will take sometime to generate one).
+3. To get started with Command Line, and work with you repository locally you will neeed copy HTTPS url of your repository,  cd into the location you would like to save your repository.
+$ git clone https://github.come/username/reponame
+4. How do we created an orphan branch if we want to use with master
+$ git checkout --orphan gh-pages
+5. You can create test file.
+$ echo "Here is some web content" > index.html
+6. $ git status command will show us the lsit of untracked files.
+
+7. Add and commit newly created files or directories to add to repositiry for version control.
+
+$ git branch -v
+$ git add . 
+$ git status
+$ git diff
+$ git commit -m "Vary basic HTML page"
+$ git push -u origin gh-pages
+
+8. To pull updates from GitHub repositories you need use "git pull <with repo URL>" command
+
+git pull https://github.com/islamuzkg/LPTHW/
+From https://github.com/islamuzkg/LPTHW
+ * branch            HEAD       -> FETCH_HEAD
+Updating 9b18588..801a93b
+Fast-forward
+ TestFile.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 TestFile.txt
+
+9. If you want to merge 2 branchs you will go to the branch you are merging from ("git check out <branch name>", and run "git merge <branch name you are merging to>", then push changes.
+
+git checkout gh-pages
+git merge master
+git status
+git branch -v
+git push -u origin master
+
+
+
+# Hope this Documentation will make you life easier. :)
