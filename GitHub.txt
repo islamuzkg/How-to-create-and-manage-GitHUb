@@ -1,4 +1,4 @@
-# This document is about how to create and manage your repositories in GitHub
+# This documention is about how to create and manage your repositories in GitHub
 
 Reference Link:
 https://www.youtube.com/watch?v=RaKX4A5EiQo
