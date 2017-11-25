@@ -24,7 +24,7 @@ $ git push -u origin gh-pages
 
 8. To pull updates from GitHub repositories you need use "git pull <with repo URL>" command
 
-git pull https://github.com/islamuzkg/LPTHW/
+$ git pull https://github.com/islamuzkg/LPTHW/
 From https://github.com/islamuzkg/LPTHW
  * branch            HEAD       -> FETCH_HEAD
 Updating 9b18588..801a93b
@@ -35,12 +35,21 @@ Fast-forward
 
 9. If you want to merge 2 branchs you will go to the branch you are merging from ("git check out <branch name>", and run "git merge <branch name you are merging to>", then push changes.
 
-git checkout gh-pages
-git merge master
-git status
-git branch -v
-git push -u origin master
+$ git checkout gh-pages
+$ git merge master
+$ git status
+$ git branch -v
+$ git push -u origin master
+------------------------------------------
+Below steps will help you to push changes without password.
+# create a public key and save it in github profile under settings > sshkey
+$ ssh-keygen -t rsa -b 4096 -C "email" 
+# you can test it.
+$ ssh -T git@github.com
 
-
+$ git add . (instead of '.' you can also use file name)
+$ git commit -m "updating"
+$ git remote set-url origin git@github.com:islamuzkg/LPTHW.git
+$ git push -u origin master
 
 # Hope this Documentation will make you life easier. :)
