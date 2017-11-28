@@ -52,4 +52,8 @@ $ git commit -m "updating"
 $ git remote set-url origin git@github.com:islamuzkg/LPTHW.git
 $ git push -u origin master
 
+#you can even save it undaer ~/.bashrc file
+alias git_call='git add . && git status && git remote set-url origin git@github.com:islamuzkg/LPTHW.git && git commit -m "Some changes" &&  git push -u origin master'
+
+
 # Hope this Documentation will make you life easier. :)
